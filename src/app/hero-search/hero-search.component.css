@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'fantasy';
   src: url('../../../assets/font/AVENGEANCE-HEROIC-AVENGER.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
-#fuente2{
-  font-family: 'Open Sans';
+#busqueda{
+  font-family: 'fantasy';
 }

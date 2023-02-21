@@ -1,15 +1,14 @@
-<div class="text-center bg-black " id="search-component">
-  <div id="fuente2" class="text-4xl pt-5 pb-5 text-white"><label for="search-box"> Avenger Search</label></div>
-  <div class="space-x-4">
-    <div class="items-center justify-center ">
-      <div class="
-      items-center justify-center">
-        <input #searchBox id="search-box" (input)="search(searchBox.value)" class= " mt-5 mb-5 border-2 border-black bg-white h-14 w-1/2 px-12 rounded-lg focus:outline-none hover:cursor-pointer items-center justify-center" />
-      </div>
+<div class="text-center bg-black" id="search-component">
+  <div id="busqueda" class="text-4xl pt-5 pb-5 text-white"><label for="search-box"> Avenger Search</label></div>
+  <div class="flex items-center justify-center mt-5 mb-5">
+    <div class="w-1/2">
+      <input #searchBox id="search-box" (input)="search(searchBox.value)"
+        class="h-14 w-full px-4 rounded-lg border-2 border-black bg-white focus:outline-none"
+        placeholder="Search Avenger..." />
+    </div>
   </div>
-</div>
   <ul class="search-result">
-    <li *ngFor="let hero of heroes$ | async" >
+    <li *ngFor="let hero of heroes$ | async">
       <a class="text-white" routerLink="/detail/{{hero.id}}">
         {{hero.name}}
       </a>
